@@ -13,6 +13,11 @@ pipeline:
     image: plugins/codecov
     environment:
       CODECOV_TOKEN: 31a62b0e-1838-407c-8d27-5bcf065685ff
+    language: java
+    script: "mvn cobertura:cobertura"
+    after_success:
+      - bash <(curl -s https://codecov.io/bash)  
+    
     #settings:
     #  token:
     #  token: 31a62b0e-1838-407c-8d27-5bcf065685ff
