@@ -13,3 +13,5 @@ pipeline:
     image: plugins/codecov
     settings:
       token: fa412194-8e2a-4e93-adbc-530089326a75
+      
+  
