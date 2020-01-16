@@ -12,8 +12,8 @@ pipeline:
   coverage-report:
     image: plugins/codecov
     settings:
-      token: 
-        from_secret: CODECOV_TOKEN
+      token: 31a62b0e-1838-407c-8d27-5bcf065685ff
+    #    from_secret: CODECOV_TOKEN
         
         #YU
       
